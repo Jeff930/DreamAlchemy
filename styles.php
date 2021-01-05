@@ -24,6 +24,14 @@ transition: opacity ease-in 0.3s;
 height:0;
 overflow: hidden;
 }
+
+.astrology-description2 {
+opacity: 0;
+transition: opacity ease-in 0.3s;
+height:0;
+overflow: hidden;
+}
+
 .is-active {
 height: auto;
 opacity: 1;
