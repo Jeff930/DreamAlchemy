@@ -12,11 +12,23 @@ $('map[name="astrology-map"] area').on('click', function(e) {
     e.stopPropagation();
 
     $('#soulreading-form').show();
-    let selectedHoroscope = $(this).attr('href').replace('#', '');
-    console.log(selectedHoroscope)
-    $('.astrology-description').removeClass('is-active');
-    $(`.astrology-description[data-id="${selectedHoroscope}"]`).addClass('is-active')
+  let selectedHoroscope = $(this).attr('href').replace('#', '');
+  console.log(selectedHoroscope)
+  $('.astrology-description').removeClass('is-active');
+  $(`.astrology-description[data-id="${selectedHoroscope}"]`).addClass('is-active')
 });
+
+$('map[name="astrology-map2"] area').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+$('#soulreading-form').show();
+  let selectedHoroscope = $(this).attr('href').replace('#', '');
+  console.log(selectedHoroscope)
+  $('.astrology-description2').removeClass('is-active');
+  $(`.astrology-description2[data-id2="${selectedHoroscope}"]`).addClass('is-active')
+});
+
 });
 
 window.onload = function(){
