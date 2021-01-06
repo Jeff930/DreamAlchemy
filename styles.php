@@ -32,6 +32,14 @@ height:0;
 overflow: hidden;
 }
 
+.hide{
+  opacity: 0;
+  transition: opacity ease-in 0.3s;
+  height:0;
+  overflow: hidden;
+}
+
+
 .is-active {
 height: auto;
 opacity: 1;
