@@ -1,5 +1,9 @@
 //Main page toggle form
 $(document).ready(function() {
+
+  var selectedHoroscope;
+  var selectedHoroscope2;
+
   $("#formButton").click(function() {
     $("#form1").toggle();
      if ($("#form1").is(':visible')) {
@@ -37,8 +41,6 @@ $('#soulreading-form').show();
 
 window.onload = function(){
 var areas = document.getElementsByTagName( 'area' );
-var selectedHoroscope;
-var selectedHoroscope2;
 console.log(areas);
 
 for( var index = 0; index < areas.length; index++ ) {    
