@@ -12,10 +12,12 @@ $('map[name="astrology-map"] area').on('click', function(e) {
     e.stopPropagation();
 
     $('#soulreading-form').show();
-  let selectedHoroscope = $(this).attr('href').replace('#', '');
+  selectedHoroscope = $(this).attr('href').replace('#', '');
   console.log(selectedHoroscope)
   $('.astrology-description').removeClass('is-active');
   $(`.astrology-description[data-id="${selectedHoroscope}"]`).addClass('is-active')
+  if (selectedHoroscope != null & selectedHoroscope2 != null)
+    $(`.hide`).addClass('is-active')
 });
 
 $('map[name="astrology-map2"] area').on('click', function(e) {
@@ -23,16 +25,20 @@ $('map[name="astrology-map2"] area').on('click', function(e) {
     e.stopPropagation();
 
 $('#soulreading-form').show();
-  let selectedHoroscope = $(this).attr('href').replace('#', '');
-  console.log(selectedHoroscope)
+  selectedHoroscope2 = $(this).attr('href').replace('#', '');
+  console.log(selectedHoroscope2)
   $('.astrology-description2').removeClass('is-active');
-  $(`.astrology-description2[data-id2="${selectedHoroscope}"]`).addClass('is-active')
+  $(`.astrology-description2[data-id2="${selectedHoroscope2}"]`).addClass('is-active')
+  if (selectedHoroscope != null & selectedHoroscope2 != null)
+    $(`.hide`).addClass('is-active')
 });
 
 });
 
 window.onload = function(){
 var areas = document.getElementsByTagName( 'area' );
+var selectedHoroscope;
+var selectedHoroscope2;
 console.log(areas);
 
 for( var index = 0; index < areas.length; index++ ) {    
