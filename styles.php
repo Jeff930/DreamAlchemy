@@ -37,6 +37,8 @@ overflow: hidden;
   transition: opacity ease-in 0.3s;
   height:0;
   overflow: hidden;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
 
@@ -45,6 +47,7 @@ height: auto;
 opacity: 1;
 transition: 3s;
 }
+
 .description {
 color: white;
 text-align: justify;
