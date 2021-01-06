@@ -810,7 +810,6 @@
                   </h2>
                </div>
             </div>
-            </div>
             <div class="row">
                <div class="col-sm-6 col-md-6 col-lg-6 center-block">
                   <h2 style="color: white;text-align: center;font-family: Montserrat;text-transform: uppercase;">Discover your astrological dream sign and the lost keys to the
@@ -857,8 +856,8 @@
                   </div>
                </div>
             </div> -->
-            <div class="row">
-               <div class="col-sm-6 col-md-6 col-lg-6 form-group center-block">
+            <div class="row get hide">
+               <div class="col-sm-12 col-md-6 col-lg-6 form-group center-block">
                   <button class="custom-btn btn-25" name="Submit"><p>Get Your Free Compatibility Reading</p></button>
                </div>
             </div>
