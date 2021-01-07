@@ -19,8 +19,8 @@ if(isset($_POST["name"])){
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900|Lato:100,200,300,400,500,600,700,800,900|Montserrat:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900|Open+Sans+Condensed:100,200,300,400,500,600,700,800,900|Open+Sans:100,200,300,400,500,600,700,800,900|Oswald:100,200,300,400,500,600,700,800,900">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
 	<title>Horoscope</title>
 	<style type="text/css">
 
@@ -183,8 +183,8 @@ video {
 
 	<div class="galaxy-video-container">
 		<video autoplay loop playsinline muted  id="bg-hero"> 
-		<source src="assets/video/astronomical.mp4" type="video/mp4">
-		<source src="assets/video/astronomical.ogg" type="video/ogg">
+		<source src="../assets/video/astronomical.mp4" type="video/mp4">
+		<source src="../assets/video/astronomical.ogg" type="video/ogg">
 		</video>
 	 </div>
 
