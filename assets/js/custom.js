@@ -18,6 +18,7 @@ $('map[name="astrology-map"] area').on('click', function(e) {
     $('#soulreading-form').show();
   selectedHoroscope = $(this).attr('href').replace('#', '');
   console.log(selectedHoroscope)
+  localStorage.setItem("horo",selectedHoroscope);
   $('.astrology-description').removeClass('is-active');
   $(`.astrology-description[data-id="${selectedHoroscope}"]`).addClass('is-active')
   if (selectedHoroscope != null & selectedHoroscope2 != null)
@@ -30,14 +31,18 @@ $('map[name="astrology-map2"] area').on('click', function(e) {
 
 $('#soulreading-form').show();
   selectedHoroscope2 = $(this).attr('href').replace('#', '');
-  console.log(selectedHoroscope2)
+  console.log(selectedHoroscope2);
+  localStorage.setItem("horo2",selectedHoroscope2);
   $('.astrology-description2').removeClass('is-active');
   $(`.astrology-description2[data-id2="${selectedHoroscope2}"]`).addClass('is-active')
   if (selectedHoroscope != null & selectedHoroscope2 != null)
     $(`.hide`).addClass('is-active')
 });
 
-});
+// window.sample.addEventListener('click', (e) => {
+//   console.log(selectedHoroscope,selectedHoroscope2);
+// })
+
 
 window.onload = function(){
 var areas = document.getElementsByTagName( 'area' );
@@ -53,4 +58,14 @@ $('html,body').animate({
         'slow');
 }, false );
 };
+
+selectedHoroscope = localStorage.getItem("horo");
+selectedHoroscope2 = localStorage.getItem("horo2");
+console.log(selectedHoroscope,selectedHoroscope2);
+document.getElementById("horoscope").innerHTML = selectedHoroscope;
+document.getElementById("horoscope2").innerHTML = selectedHoroscope2;
+document.getElementById('horoscope-image').src="./assets/images/astro-signs/"+ selectedHoroscope +".png";
+document.getElementById('horoscope-image2').src="./assets/images/astro-signs/"+ selectedHoroscope2 +".png";
 }
+
+});
