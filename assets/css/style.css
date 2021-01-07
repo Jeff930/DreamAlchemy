@@ -5,11 +5,28 @@
 
 
 }
+
+.horoscope-image{
+  height:150px;
+  width:150px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
     display: block
 }
+
+.bottom-margin{
+  margin-bottom:40px;
+}
+
+.margin-side{
+  
+}
+
 @media only screen and (min-width: 600px) {
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
