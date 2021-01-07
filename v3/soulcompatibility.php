@@ -2,13 +2,6 @@
 // Start the session
 session_start();
 
-if(isset($_POST["name"])){
-	$_SESSION["name"] = $_POST["name"];
-	$_SESSION["mobths"] = $_POST["mobths"];
-	$_SESSION["day"] = $_POST["day"];
-	$_SESSION["year"] = $_POST["year"];
-}
-
 ?> -->
 <!DOCTYPE html>
 <html>
@@ -194,23 +187,25 @@ video {
 <div class="container-fluid" id="soul">
 	<br>
 	<br>
-	<form method="post" action="./result.php">
+	<form>
 		<div class="row">
 			<div class="col-sm-11 col-md-11 col-lg-11 center-block">
 				<div class="row">
 					<div class="col-sm-10 col-md-10 col-lg-10 center-block" style="background: rgba(255,255,255,0.5);box-shadow: 0px 0px 10px 5px #33383e;">
 						<div class="row">
 							<br>
-							<div class="col-sm-12 col-md-12 col-lg-12">
-								<center><img src="./assets/images/taurus.png" alt=""></center>
-	  							<h1 id="heading" class="center-block"><center style="color: #fb3535">YOUR ASTROLOGICAL DREAM READING RESULT</center></h1>
+							<div class="col-sm-12 col-md-12 col-lg-12 margin-top margin-bottom margin-side">
+								<center><img id="horoscope-image" class="horoscope-image"><img id="horoscope-image2" class="horoscope-image"></center>
+								<center></center>
+	  							<h1 id="heading" class="center-block"><center style="color: #fb3535">YOUR ASTROLOGICAL COMPATIBILITY READING RESULT</center></h1>
 							</div>
 							<br>
 						</div>
 						<div class="row">
 							<div class="col-sm-10 col-md-10 col-lg-10 center-block">
-								<h6 style="text-align: justify;text-indent: 30px;font-family: Montserrat">Hi <?php echo $_SESSION["name"]; ?>, thank you so much for being here with me. Now there are many great laws in this universe such as the law of attraction, the law of rhythm , and the law of gestation just to name a few.
-								And the force of planetary alignment is just as powerful. The alignment of the planets dictates the flow of energy through out earth.
+								<h6 style="text-align: justify;text-indent: 30px;font-family: Montserrat">This is sample content for <span id="horoscope"></span> and <span id="horoscope2"></span>.</h6>
+
+								<h6 style="text-align: justify;text-indent: 30px;font-family: Montserrat">								The force of planetary alignment is just as powerful. The alignment of the planets dictates the flow of energy through out earth.
 								As the planets came in alignment the day you were born, you were affecting by this special force. And you were given a sign that plays a big part in your life force.
 								Understanding your sign is one of best ways to discover your natural advantages when it comes to using the law of attraction to manifest your desires. 
 								Now let's talk about your sign and how you can start using your hidden gifts to manifest your desires</h6>
@@ -246,28 +241,8 @@ video {
 							</div>
 						</div>
 						<br>
-						<div class="row">
-							<div class="col-sm-6 col-md-6 col-lg-6 center-block">
-								<input type="text" class="form-control" name="email" id="email" placeholder="Enter your email">		
-							<br>
-							<button type="submit" class="btn btn-primary btn-lg btn-block" name="Submit">I Want To See My Reading</button>
-							<br>
-							</div>
-						</div>
-						<div class="row">
-						<p id=section-title>What is the Number 1 Biggest Challenge in your Life?<p>
-						<div id= "row-btn">
-						<div class="block-btn">
-								<button class="global-btn">My Lovelife</button>
-								<button class="global-btn">My My Health</button>
-								<button class="global-btn">My Family</button>
-							<button class="global-btn">My Finances</button>
-							<button class="global-btn">My Work</button>
 						
-							<p id= section-caption> (Click on one of the options above to proceed to the next step of your reading) </p>
-						</div>
-						</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -280,9 +255,10 @@ video {
 <script src="./assets/js/jquery-3.5.1.js"></script>
 <script src="./assets/js/bootstrap.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/custom.js"></script>
 <script type="text/javascript">
 	$("#soul").hide();
-	$('body').append('<div id="loadingDiv"><div class="container"><br><div class="row"><div class="col-sm-6 col-md-6 col-lg-6 center-block"><center><h1 style="color: white;text-shadow: 2px 2px 3px #fb3535;font-family: "Open Sans Condensed";">PREPARING YOUR ASTROLOGICAL DREAM</h1></center></div></div><div class="row"><div class="col-sm-10 col-md-10 col-lg-10 center-block"><video id="videoloader" playsinline="" autoplay="" loop="" muted="" src="./assets/images/Zodiac2.mp4"></video></div></div><br><div class="row"><div class="col-sm-8 col-md-8 col-lg-8 center-block"><h4 style=";color: white;text-shadow: 2px 2px 3px #fb3535;font-family: "Open Sans Condensed";"><center><?php echo $_SESSION["name"]; ?>,We Are Preparing Your ASTROLOGICAL DREAM READING Will Dive Into Parts Of Your Personality That Were Written Into Your Soul Since The Day You Were Born...</center></h4></div></div></div></div>');
+	$('body').append('<div id="loadingDiv"><div class="container"><br><div class="row"><div class="col-sm-6 col-md-6 col-lg-6 center-block"><center><h1 style="color: white;text-shadow: 2px 2px 3px #fb3535;font-family: "Open Sans Condensed";">PREPARING YOUR ASTROLOGICAL DREAM</h1></center></div></div><div class="row"><div class="col-sm-10 col-md-10 col-lg-10 center-block"><video id="videoloader" playsinline="" autoplay="" loop="" muted="" src="./assets/images/Zodiac2.mp4"></video></div></div><br><div class="row"><div class="col-sm-8 col-md-8 col-lg-8 center-block"><h4 style=";color: white;text-shadow: 2px 2px 3px #fb3535;font-family: "Open Sans Condensed";"><center>We Are Preparing Your ASTROLOGICAL DREAM READING Will Dive Into Parts Of Your Compatibility With Others That Were Written Into Your Soul Since The Day You Were Born...</center></h4></div></div></div></div>');
 $(window).on('load', function(){
   setTimeout(removeLoader, 5400); //wait for page load PLUS two seconds.
 });
