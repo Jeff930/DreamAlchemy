@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   var selectedHoroscope;
   var selectedHoroscope2;
+  var name;
 
   $("#formButton").click(function() {
     $("#form1").toggle();
@@ -21,7 +22,7 @@ $('map[name="astrology-map"] area').on('click', function(e) {
   localStorage.setItem("horo",selectedHoroscope);
   $('.astrology-description').removeClass('is-active');
   $(`.astrology-description[data-id="${selectedHoroscope}"]`).addClass('is-active')
-  if (selectedHoroscope != null & selectedHoroscope2 != null)
+  if (selectedHoroscope != null && selectedHoroscope2 != null)
     $(`.hide`).addClass('is-active')
 });
 
@@ -35,12 +36,14 @@ $('#soulreading-form').show();
   localStorage.setItem("horo2",selectedHoroscope2);
   $('.astrology-description2').removeClass('is-active');
   $(`.astrology-description2[data-id2="${selectedHoroscope2}"]`).addClass('is-active')
-  if (selectedHoroscope != null & selectedHoroscope2 != null)
+  if (selectedHoroscope != null && selectedHoroscope2 != null)
     $(`.hide`).addClass('is-active')
 });
 
-// window.sample.addEventListener('click', (e) => {
-//   console.log(selectedHoroscope,selectedHoroscope2);
+// window.submit.addEventListener('click', (e) => {
+//   name = document.getElementById('fullname').value;
+//   console.log(name);
+//   localStorage.setItem("name",name);
 // })
 
 
@@ -59,13 +62,14 @@ $('html,body').animate({
 }, false );
 };
 
-selectedHoroscope = localStorage.getItem("horo");
-selectedHoroscope2 = localStorage.getItem("horo2");
-console.log(selectedHoroscope,selectedHoroscope2);
-document.getElementById("horoscope").innerHTML = selectedHoroscope;
-document.getElementById("horoscope2").innerHTML = selectedHoroscope2;
-document.getElementById('horoscope-image').src="./assets/images/astro-signs/"+ selectedHoroscope +".png";
-document.getElementById('horoscope-image2').src="./assets/images/astro-signs/"+ selectedHoroscope2 +".png";
+savedHoroscope = localStorage.getItem("horo");
+savedHoroscope2 = localStorage.getItem("horo2");
+name = localStorage.getItem("name");
+console.log(savedHoroscope,savedHoroscope2, name);
+document.getElementById("horoscope").innerHTML = savedHoroscope;
+document.getElementById("horoscope2").innerHTML = savedHoroscope2;
+document.getElementById('horoscope-image').src="./assets/images/astro-signs/"+ savedHoroscope +".png";
+document.getElementById('horoscope-image2').src="./assets/images/astro-signs/"+ savedHoroscope2 +".png";
 }
 
 });
