@@ -129,3 +129,7 @@ v3/cgi-bin/assets/images/
 "sendgrid.env" 
 
 vendor/
+
+*.png
+
+v3/reading/assets/images/
