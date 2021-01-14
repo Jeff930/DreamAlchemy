@@ -79,7 +79,7 @@
 
 						<li><a href="http://staging.dreamalchemy.bestworkz.com/v3/how-astrology-affects-human-lives.php"><i class="fa fa-angle-double-right"></i>Blogs Post</a></li>
 
-						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Zodiac sign</a></li>
+						<!-- <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Zodiac sign</a></li> -->
 
 					</ul>
 
@@ -92,11 +92,11 @@
 					<h1 class="newsletter text-white ">Subscribe for News and Updates</h1>
 
         <div class="horoscope-btn">
+        	<form>
+			<input type="text" required>
 
-			<input type="text">
-
-			<a href="#"><input class="btn btn-primary" type="submit" value="Subscribe"></a>
-
+			<a href="#"><input class="btn btn-primary" type="submit" value="Subscribe" ></a>
+		</form>
         </div>
 
 				</div>

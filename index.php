@@ -2,9 +2,9 @@
    // Start the session
    session_start();
 
-   if(isset($_SESSION["name"])){
-      header("Location: ./soulreading.php");
-   }
+   // if(isset($_SESSION["name"])){
+   //    header("Location: ./soulreading.php");
+   // }
 ?> -->
 <!DOCTYPE html>
 <html>
@@ -24,6 +24,7 @@
       
       </head>
       <body>
+         
 		   <div class="galaxy-video-container">
 		   <video autoplay loop playsinline muted  id="bg-hero"> 
 		   <source src="assets/video/astronomical.mp4" type="video/mp4">
@@ -54,18 +55,18 @@
             <div class="col-sm-12 col-md-12 col-lg-12">
                <img class="img-responsive center-block d-block" style="width:550px; height: 550px;" src="./assets/images/Wheel-05.png" usemap="#astrology-map">
                <map name="astrology-map" id="map">
-                  <area target="" class="area" zodiac="Aquarius" alt="Aquarius" title="January 20-February 18" href="#aquarius" coords="247,166,263,163,280,163,291,164,303,166,336,43,312,39,289,36,266,36,232,39,213,44" shape="poly">
-                  <area target="" class="area" zodiac="Pisces" alt="Pisces" title="February 19–March 20" href="#pisces" coords="304,166,320,172,332,178,343,186,353,194,444,104,424,87,406,74,385,62,363,52,337,43" shape="poly">
-                  <area target="" class="area" zodiac="Aries" alt="Aries" title="March 21–April 19" href="#aries" coords="384,245,379,231,369,213,356,196,446,106,472,138,483,157,492,175,499,188,506,211" shape="poly">
-                  <area target="" class="area" zodiac="Taurus" alt="Taurus" title="April 20–May 20" href="#taurus" coords="384,247,387,264,388,282,384,304,507,336,514,300,515,279,514,263,512,241,507,214"  shape="poly">
-                  <area target="" class="area" zodiac="Gemini" alt="Gemini" title="May 21–June 20" href="#gemini" coords="383,305,378,319,367,339,354,355,446,445,467,418,482,397,497,367,506,338" shape="poly">
-                  <area target="" class="area" zodiac="Cancer" alt="Cancer" title="June 21–July 22" href="#cancer" coords="354,354,341,366,326,375,305,383,338,507,374,494,404,477,426,462,444,445"  shape="poly">
-                  <area target="" class="area" zodiac="Leo" alt="Leo" title="July 23–August 22" href="#leo" coords="246,384,261,386,274,387,287,386,302,384,337,507,313,511,287,514,262,514,241,513,213,507" shape="poly">
-                  <area target="" class="area" zodiac="Virgo" alt="Virgo" title="August 23–September 22" href="#virgo" coords="244,383,233,379,221,373,209,366,197,355,107,444,120,460,148,478,162,487,176,493,189,499,202,502,212,507" shape="poly">
+                  <area target="" class="area" zodiac="Aquarius" alt="Aquarius" title="January 20-February 18" href="#Aquarius" coords="247,166,263,163,280,163,291,164,303,166,336,43,312,39,289,36,266,36,232,39,213,44" shape="poly">
+                  <area target="" class="area" zodiac="Pisces" alt="Pisces" title="February 19–March 20" href="#Pisces" coords="304,166,320,172,332,178,343,186,353,194,444,104,424,87,406,74,385,62,363,52,337,43" shape="poly">
+                  <area target="" class="area" zodiac="Aries" alt="Aries" title="March 21–April 19" href="#Aries" coords="384,245,379,231,369,213,356,196,446,106,472,138,483,157,492,175,499,188,506,211" shape="poly">
+                  <area target="" class="area" zodiac="Taurus" alt="Taurus" title="April 20–May 20" href="#Taurus" coords="384,247,387,264,388,282,384,304,507,336,514,300,515,279,514,263,512,241,507,214"  shape="poly">
+                  <area target="" class="area" zodiac="Gemini" alt="Gemini" title="May 21–June 20" href="#Gemini" coords="383,305,378,319,367,339,354,355,446,445,467,418,482,397,497,367,506,338" shape="poly">
+                  <area target="" class="area" zodiac="Cancer" alt="Cancer" title="June 21–July 22" href="#Cancer" coords="354,354,341,366,326,375,305,383,338,507,374,494,404,477,426,462,444,445"  shape="poly">
+                  <area target="" class="area" zodiac="Leo" alt="Leo" title="July 23–August 22" href="#Leo" coords="246,384,261,386,274,387,287,386,302,384,337,507,313,511,287,514,262,514,241,513,213,507" shape="poly">
+                  <area target="" class="area" zodiac="Virgo" alt="Virgo" title="August 23–September 22" href="#Virgo" coords="244,383,233,379,221,373,209,366,197,355,107,444,120,460,148,478,162,487,176,493,189,499,202,502,212,507" shape="poly">
                   <area target="" class="area" zodiac="Libra" alt="Libra" title="September 23–October 22" href="#libra" coords="166,305,171,318,183,340,194,353,105,444,89,426,73,406,60,380,52,364,43,338" shape="poly">
-                  <area target="" class="area" zodiac="Scorpio" alt="Scorpio" title="October 23–November 21" href="#scorpio" coords="166,247,163,263,162,279,165,303,43,336,35,298,36,261,38,233,45,214" shape="poly">
-                  <area target="" class="area" zodiac="Sagittarius" alt="Sagittarius" title="November 22–December 21" href="#sagittarius" coords="167,245,172,229,183,210,195,196,105,107,92,121,81,135,67,155,57,177,49,192,43,212"shape="poly">
-                  <area target="" class="area" zodiac="Capricorn" alt="Capricorn" title="December 22-January 19" href="#capricorn" coords="245,167,233,170,220,177,209,184,197,195,106,105,127,86,156,66,172,59,191,50,212,44" shape="poly">
+                  <area target="" class="area" zodiac="Scorpio" alt="Scorpio" title="October 23–November 21" href="#Scorpio" coords="166,247,163,263,162,279,165,303,43,336,35,298,36,261,38,233,45,214" shape="poly">
+                  <area target="" class="area" zodiac="Sagittarius" alt="Sagittarius" title="November 22–December 21" href="#Sagittarius" coords="167,245,172,229,183,210,195,196,105,107,92,121,81,135,67,155,57,177,49,192,43,212"shape="poly">
+                  <area target="" class="area" zodiac="Capricorn" alt="Capricorn" title="December 22-January 19" href="#Capricorn" coords="245,167,233,170,220,177,209,184,197,195,106,105,127,86,156,66,172,59,191,50,212,44" shape="poly">
                </map>
             </div>
          </div>
@@ -74,7 +75,7 @@
             <div class="row mb-3">
                
                <div class="col-sm-12 col-md-6 col-lg-6 center-block">
-                  <div class="astrology-description" data-id="aries">
+                  <div class="astrology-description" data-id="Aries">
                      <div class="row">
                         <div class="col-6 col-sm-12 pl-5">
                            <div class="image-container">
@@ -102,7 +103,7 @@
 												Aries and your ruler Mars both govern the head and brain areas of your body, so when Mars is involved in tense transits, headaches or migraines or general brain fogginess can be an issue. An Aries new moon at the end of March makes you want to give in to impulse, and this can be an exciting, high-energy time. Your body will want to move forward at maximum speed, but your brain will need some time to catch up.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="pisces">
+                  <div class="astrology-description" data-id="Pisces">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -133,7 +134,7 @@
                                  Dynamic Mercury joins the sun in outgoing Leo at the start of August, so if it's been a while since you were in touch with a beloved family member, reach out to them now. You'll never be sorry for taking the initiative where family is concerned, Pisces. Fun and warm Leo energy is especially good around children, so interact with the young members of your family now as much as possible.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="aquarius">
+                  <div class="astrology-description" data-id="Aquarius">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -162,7 +163,7 @@
                         You're a sign who loves to communicate, schmooze, network, and make new friends, and chatty Mercury's retrograde cycles try to hinder that banter that you love so much. The three retrograde cycles to be aware of this year hit from mid-February to early March, mid-June to mid-July, and mid-October to early November. Another thing to remember is that all these retrograde cycles touch down in emotional water signs, just like last year, so using your intuition will be the key to avoiding a lot of Mercury retrograde.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="capricorn">
+                  <div class="astrology-description" data-id="Capricorn">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -193,7 +194,7 @@
                      The sun is in loyal Taurus from late April until late May, making you extra vigilant when it comes to protecting your friendships. Honesty is an important factor now, and jealousy might play a role in tensions with friends. Being a good friend means being happy for them when something good happens to them, and if you aren�t, Capricorn, you should look within to try to understand why you're not, and vice versa.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="sagittarius">
+                  <div class="astrology-description" data-id="Sagittarius">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -222,7 +223,7 @@
 							Dreamy Neptune spends the entire year in Pisces, the sign it rules, so you might spend a lot of time idealizing your current friendships and/or looking at other people as though they're so lucky to have the circle of friends they have. And the truth lies somewhere in the middle. When you realize that no one's relationships are perfect, you can start to appreciate your own friendships for their little imperfections.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="scorpio">
+                  <div class="astrology-description" data-id="Scorpio">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -252,7 +253,7 @@
 							Giving and accepting advice continues to be on your friendship/family agenda as Saturn, the wise teacher of the universe, spends some retrograde time in Capricorn again in late fall. You give your opinions and advice easily to trusted friends and family members, but when it comes to receiving advice and taking other people's opinions to heart, well, that isn't as easy for you. Use Saturn's introspective retrograde period to figure out what your limitations are in this area and how you can learn to change your ways.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="libra">
+                  <div class="astrology-description" data-id="Libra">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -282,7 +283,7 @@
 							Your home planet, lovely Venus, starts 2020 in innovative Aquarius, so you might be willing to experiment with love and money. Venus quickly moves into creative, caring Pisces in the middle of January, however, so you should continue to have imaginative (if not a bit idealized) thoughts about how to do things a little differently.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="virgo">
+                  <div class="astrology-description" data-id="Virgo">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -311,7 +312,7 @@
                      The sun spends its usual time in Virgo from late August to late September, entering your practical sign only two days after your home planet Mercury starts a six-week trip through Virgo as well. This highly detailed, communicative time can be a turning point for you regarding getting your point across. If you've felt shut down and/or tuned out, this is the time to make sure you say your peace and maybe even get the last word in.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="leo">
+                  <div class="astrology-description" data-id="Leo">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -337,7 +338,7 @@
 							But because the sun is your ruler, you can get stressed out during its more difficult transits, and the sun's square to unpredictable Uranus later in January is one such time. If you're subjected to a sudden change that you didn't plan for, your mental state and/or body could be thrown for a loop. Take precautions for when you're feeling overstressed, like talking to a friend, drinking a soothing cup of tea, or taking a shower to cool yourself off.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="cancer">
+                  <div class="astrology-description" data-id="Cancer">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -366,7 +367,7 @@
                      Saturn is also the universal teacher so you can take advantage of a lot of lessons regarding family and friendship matters while it's in responsible Capricorn. Pay attention to what a strong, masculine father figure has to say and take his advice where applicable.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="gemini">
+                  <div class="astrology-description" data-id="Gemini">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -395,7 +396,7 @@
 							Gemini technically rules the arms, shoulders, and nervous system, but perhaps your most important (and active) body part is your brain. Details are extremely important as the sun enters Virgo, the other sign Mercury rules, at the end of August, and health issues are always a key aspect of that transit. Stomach or intestinal issues might be highlighted now, and they shouldn't be ignored. It doesn't take long for something to reach critical status, so don't disregard those early literal gut feelings that something might be wrong.
                      </p>
                   </div>
-                  <div class="astrology-description" data-id="taurus">
+                  <div class="astrology-description" data-id="Taurus">
                   <div class="row">
                   <div class="col-6 pl-5">
                      <div class="image-container">
@@ -518,7 +519,7 @@
       <script src="./assets/js/jquery-3.5.1.js"></script>
       <script src="./assets/js/mapster.min.js?ver=1.0.0"></script>
       <script src="./assets/js/bootstrap.min.js"></script>
-      <script src="./assets/js/custom.js"></script>
+      <script src="./assets/js/sign.js"></script>
       <script>
          (function($) {
             var basic_opts = {

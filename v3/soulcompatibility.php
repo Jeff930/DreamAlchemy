@@ -1,7 +1,7 @@
 <!-- <?php
 // Start the session
 session_start();
-
+	$_SESSION["name"] = $_POST["name"];
 ?> -->
 <!DOCTYPE html>
 <html>
@@ -14,6 +14,7 @@ session_start();
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/style.css">
+	<?php include("styles.php"); ?>
 	<title>Horoscope</title>
 	<style type="text/css">
 
@@ -196,14 +197,13 @@ video {
 							<br>
 							<div class="col-sm-12 col-md-12 col-lg-12 margin-top margin-bottom margin-side">
 								<center><img id="horoscope-image" class="horoscope-image"><img id="horoscope-image2" class="horoscope-image"></center>
-								<center></center>
 	  							<h1 id="heading" class="center-block"><center style="color: #fb3535">YOUR ASTROLOGICAL COMPATIBILITY READING RESULT</center></h1>
 							</div>
 							<br>
 						</div>
 						<div class="row">
 							<div class="col-sm-10 col-md-10 col-lg-10 center-block">
-								<h6 style="text-align: justify;text-indent: 30px;font-family: Montserrat">This is sample content for <span id="horoscope"></span> and <span id="horoscope2"></span>.</h6>
+								<h6 style="text-align: justify;text-indent: 30px;font-family: Montserrat">Hi <?php echo $_SESSION["name"]; ?>, this is sample content for <span id="horoscope"></span> and <span id="horoscope2"></span>.</h6>
 
 								<h6 style="text-align: justify;text-indent: 30px;font-family: Montserrat">								The force of planetary alignment is just as powerful. The alignment of the planets dictates the flow of energy through out earth.
 								As the planets came in alignment the day you were born, you were affecting by this special force. And you were given a sign that plays a big part in your life force.
@@ -232,17 +232,16 @@ video {
 									  	<br>
 							</div>
 						</div>
-						<div class="row" style="display:none;">
-							<div class="col-sm-10 col-md-10 col-lg-10 center-block">
-								<video width="600" style="display:block; margin: 0 auto;" controls>
-					            <source src="./assets/images/mov_bbb.mp4" type="video/mp4">
-					            <source src="./assets/images/mov_bbb.ogg" type="video/ogg">
-					        	</video>
+						<br>
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-6 center-block">
+								<input type="text" class="form-control" name="email" id="email" placeholder="Enter your email" required>		
+							<br>
+							<button class="btn btn-primary btn-lg btn-block" >Send Me My Reading</button>
+							<br>
 							</div>
 						</div>
 						<br>
-						
-						
 					</div>
 				</div>
 			</div>

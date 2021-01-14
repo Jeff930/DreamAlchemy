@@ -2,7 +2,6 @@
    // Start the session
    session_start();
 
-   
 ?> -->
 <!DOCTYPE html>
 <html>
@@ -48,8 +47,8 @@
                </h5>
             </div>
          </div>
-         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6">
+         <div class="row" style="margin-left:2px;">
+            <div class="col-sm-12 col-md-12 col-lg-6 center">
                <img class="img-responsive center-block d-block" style="width:550px; height: 550px;" src="../assets/images/Wheel-05.png" usemap="#astrology-map">
                <map name="astrology-map" id="map">
                   <area target="" class="area" zodiac="Aquarius" alt="Aquarius" title="January 20-February 18" href="#Aquarius" coords="247,166,263,163,280,163,291,164,303,166,336,43,312,39,289,36,266,36,232,39,213,44" shape="poly">
@@ -87,7 +86,7 @@
          </div>
          <br>
          <form method="post" action="./soulcompatibility.php" id="soulreading-form">
-            <div class="row">
+            <div class="row"  style="margin-left:20px;">
                <div class="col-sm-12 col-md-6 col-lg-6">
                   <div class="astrology-description" data-id="Aries">
                      <div class="row">
@@ -823,13 +822,13 @@
                   </h2>
                </div>
             </div>
-         <div class=submit-form>
-            <!--  <div class="row">
+         <div class="submit-form get hide">
+              <div class="row">
                <div class="col-sm-6 col-md-6 col-lg-6 form-group center-block">
                   <input type="text" class="form-control" name="name" id="fullname" placeholder="Enter Your Name" required>
                </div>
-            </div>
-            <div class="row">
+             </div>
+             <div class="row">
                <div class="col-sm-6 col-md-6 col-lg-6 form-group center-block">
                   <div class="row">
                      <div class="col-sm-4 col-md-4 col-lg-4 form-group">
@@ -861,10 +860,10 @@
                      </div>
                   </div>
                </div>
-            </div> -->
-            <div class="row get hide">
+            </div>
+            <div class="row">
                <div class="col-sm-12 col-md-6 col-lg-6 form-group center-block">
-                  <button class="custom-btn btn-25" name="Submit"><p>Get Your Free Compatibility Reading</p></button>
+                  <button class="custom-btn btn-25 submit" name="submit" id="submit"><p>Get Your Free Compatibility Reading</p></button>
                </div>
             </div>
          </div>               

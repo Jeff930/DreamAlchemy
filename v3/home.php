@@ -296,7 +296,7 @@ session_start();
                           <div class="item-box-blog-body">
                             <!--Heading-->
                             <div class="item-box-blog-heading">
-                              <a href="/v3/how-astrology-affects-human-lives.php" tabindex="0">
+                              <a href="./how-astrology-affects-human-lives.php" tabindex="0">
                                 <h5>How Astrology Affects Human Lives</h5>
                               </a>
                             </div>
@@ -308,7 +308,7 @@ session_start();
                             <div class="item-box-blog-text">
                               <p>Humans are interconnected to other elements in more ways than we can imagine. The sun, the moon, the planets, and the stars are integral to our lives.</p>
                             </div>
-                            <div class="mt"> <a href="/v3/how-astrology-affects-human-lives.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <div class="mt"> <a href="./how-astrology-affects-human-lives.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
                             <!--Read More Button-->
                           </div>
                         </div>
@@ -324,7 +324,7 @@ session_start();
                           <div class="item-box-blog-body">
                             <!--Heading-->
                             <div class="item-box-blog-heading">
-                              <a href="/v3/how-to-tell-if-astrology-reading-is-accurate.php" tabindex="0">
+                              <a href="./how-to-tell-if-astrology-reading-is-accurate.php" tabindex="0">
                                 <h5>How To Tell If Astrology Reading is Accurate</h5>
                               </a>
                             </div>
@@ -336,7 +336,7 @@ session_start();
                             <div class="item-box-blog-text">
                               <p>When it comes to astrology, every person has different beliefs. Some see the Horoscope as their gospel. Some just don't see the value in them.</p>
                             </div>
-                            <div class="mt"> <a href="/v3/how-to-tell-if-astrology-reading-is-accurate.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <div class="mt"> <a href="./how-to-tell-if-astrology-reading-is-accurate.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
                             <!--Read More Button-->
                           </div>
                         </div>
@@ -352,7 +352,7 @@ session_start();
                           <div class="item-box-blog-body">
                             <!--Heading-->
                             <div class="item-box-blog-heading">
-                              <a href="/v3/astrology-and-marriage-prediction.php" tabindex="0">
+                              <a href="./astrology-and-marriage-prediction.php" tabindex="0">
                                 <h5>Astrology and Marriage Prediction</h5>
                               </a>
                             </div>
@@ -364,7 +364,7 @@ session_start();
                             <div class="item-box-blog-text">
                               <p>We’ve learned a lot about how astrology is used to interpret the connection of the movements of celestial bodies to human life.</p>
                             </div>
-                            <div class="mt"> <a href="/v3/astrology-and-marriage-prediction.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <div class="mt"> <a href="./astrology-and-marriage-prediction.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
                             <!--Read More Button-->
                           </div>
                         </div>
@@ -442,7 +442,7 @@ session_start();
                           <div class="item-box-blog-body">
                             <!--Heading-->
                             <div class="item-box-blog-heading">
-                              <a href="/v3/astrology-and-marriage-prediction.php" tabindex="0">
+                              <a href="./astrology-and-marriage-prediction.php" tabindex="0">
                                 <h5>Astrology and Marriage Prediction</h5>
                               </a>
                             </div>
@@ -454,7 +454,7 @@ session_start();
                             <div class="item-box-blog-text">
                               <p>We’ve learned a lot about how astrology is used to interpret the connection of the movements of celestial bodies to human life.</p>
                             </div>
-                            <div class="mt"> <a href="/v3/astrology-and-marriage-prediction.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <div class="mt"> <a href="./astrology-and-marriage-prediction.php" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
                             <!--Read More Button-->
                           </div>
                         </div>

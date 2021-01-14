@@ -147,7 +147,7 @@ section .section-title {
 }
 
 .navbar-menus {
-    margin-left: 150px !important;
+    
 }
 
 @media (max-width:767px){

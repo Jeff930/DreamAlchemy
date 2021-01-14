@@ -125,3 +125,7 @@ v3/assets/images/astrology-signs/
 v3/assets/images/
 
 v3/cgi-bin/assets/images/
+"sendgrid.env" 
+"sendgrid.env" 
+
+vendor/

@@ -23,15 +23,6 @@ $('map[name="astrology-map"] area').on('click', function(e) {
   $(`.astrology-description[data-id="${singleHoroscope}"]`).addClass('is-active')
 });
 
-
-
-// window.submit.addEventListener('click', (e) => {
-//   name = document.getElementById('fullname').value;
-//   console.log(name);
-//   localStorage.setItem("name",name);
-// })
-
-
 window.onload = function(){
 var areas = document.getElementsByTagName( 'area' );
 console.log(areas);

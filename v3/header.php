@@ -40,15 +40,15 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ">
     <div class="navbar-brand">
-        <h2 class="my-0"><a href="/v3/home.php" class="site-logo">Dream Alchemy</a></h2>
+        <h2 class="my-0"><a href="./home.php" class="site-logo">Dream Alchemy</a></h2>
     </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="col-md-4 navbar-menus">
+  <div class="col-md-4">
   <div class="collapse navbar-collapse" id="main_nav">
 <ul class="navbar-nav">
-	<li class="nav-item "> <a class="nav-link" href="/v3/home.php">HOME</a> </li>
+	<li class="nav-item "> <a class="nav-link" href="./home.php">HOME</a> </li>
 	<li class="nav-item dropdown">
 	   <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> HOROSCOPE </a>
 	    <ul class="dropdown-menu">
@@ -66,7 +66,7 @@
             <li><a class="dropdown-item" href="http://staging.dreamalchemy.bestworkz.com/v3/pisces.php"> PISCES</a></li>
         </ul>
     </li>
-    <li class="nav-item dropdown">
+    <!-- <li class="nav-item dropdown">
 	   <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> ASTROLOGY </a>
 	    <ul class="dropdown-menu">
 		    <li><a class="dropdown-item" href="#"> ARTICLES</a></li>
@@ -92,14 +92,14 @@
             <li><a class="dropdown-item" href="#"> READING </a></li>
             <li><a class="dropdown-item" href="#"> FREE DAILY READING</a></li>
         </ul>
-    </li>
+    </li> -->
     <li class="nav-item dropdown">
 	    <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">COMPATIBILITY</a>
 	    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#"> ARTICLES</a></li>
-            <li><a class="dropdown-item" href="#"> LOVE COMPATIBILITY </a></li>
-            <li><a class="dropdown-item" href="#"> CAREER COMPATIBILITY </a></li>
-            <li><a class="dropdown-item" href="#"> PET COMPATIBILITY</a></li>
+        <!-- <li><a class="dropdown-item" href="#"> ARTICLES</a></li> -->
+            <li><a class="dropdown-item" href="http://staging.dreamalchemy.bestworkz.com/v3/compatibility.php"> SIGN COMPATIBILITY </a></li>
+           <!--  <li><a class="dropdown-item" href="#"> CAREER COMPATIBILITY </a></li>
+            <li><a class="dropdown-item" href="#"> PET COMPATIBILITY</a></li> -->
         </ul>
 	</li>
 </ul>
